@@ -62,7 +62,7 @@ void app_main(void)
     st7789_lcd_backlight(1);
     lv_demo_widgets();
     xTaskCreatePinnedToCore(Lcd_Show_Task, "Lcd_Show_Task", 8192, NULL, 10, NULL, 0);  //增加LVGL任务栈大小
-
+    
 }
 
 
