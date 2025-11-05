@@ -49,7 +49,7 @@ void Lcd_Show_Task(void *pvParameters)
         /* code */
         lv_task_handler();
         
-        vTaskDelay(pdMS_TO_TICKS(50)); // 延迟一段时间以减少CPU占用率
+        vTaskDelay(pdMS_TO_TICKS(20)); // 延迟一段时间以减少CPU占用率
     }
     
 }
