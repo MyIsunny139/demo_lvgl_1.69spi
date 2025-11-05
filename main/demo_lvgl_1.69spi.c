@@ -13,10 +13,6 @@
 #include "App_Init.h"
 
 
-
-
-
-
 void led_run_task(void *pvParameters)
 {
     while(1) {
@@ -60,7 +56,6 @@ void Lcd_Show_Task(void *pvParameters)
 
 void app_main(void)
 {
-
     app_init();
     xTaskCreatePinnedToCore(led_run_task, "led_run_task", 2048, NULL, 10, NULL, 0);
     lv_port_init();
